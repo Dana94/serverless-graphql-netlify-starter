@@ -35,12 +35,12 @@ const typeDefs = gql`
     quotes: [Quote]
   }
   type Author {
-    id: Number
+    id: Int
     author: String
   }
   type Quote {
-    id: Number
-    authorId: Number
+    id: Int
+    authorId: Int
     quote: String
   }
 `;
