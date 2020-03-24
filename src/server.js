@@ -7,11 +7,11 @@ const { gql } = require('apollo-server-lambda');
 const authors = [
   {
     id: 1,
-    author: 'Eleanor Roosevelt'
+    name: 'Eleanor Roosevelt'
   },
   {
     id: 2,
-    author: 'M.F.K. Fisher'
+    name: 'M.F.K. Fisher'
   },
 ]
 
@@ -31,17 +31,19 @@ const quotes = [
 const typeDefs = gql`
   type Query {
     hello: String
-    authors: [Author]
+    author: [Author]
     quotes: [Quote]
   }
   type Author {
     id: Int
-    author: String
+    name: String
+    quotes: [Quote]
   }
   type Quote {
     id: Int
     authorId: Int
     quote: String
+    author: Author
   }
 `;
 
@@ -56,7 +58,7 @@ const resolvers = {
     quotes: author => filter(quotes, {authorId: author.id}),
   },
 
-  Quotes: {
+  Quote: {
     author: quote => find(authors, {id: quote.authorId}),
   }
 };
