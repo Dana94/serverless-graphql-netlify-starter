@@ -11,7 +11,6 @@ const authors = [
   },
   {
     id: 2,
-    quote: 'First we eat, then we do everything else.',
     author: 'M.F.K. Fisher'
   },
 ]
@@ -32,6 +31,17 @@ const quotes = [
 const typeDefs = gql`
   type Query {
     hello: String
+    authors: [Author]
+    quotes: [Quote]
+  }
+  type Author {
+    id: Number
+    author: String
+  }
+  type Quote {
+    id: Number
+    authorId: Number
+    quote: String
   }
 `;
 
