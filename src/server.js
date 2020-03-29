@@ -19,48 +19,62 @@ const quotes = [
   {
     id: 1,
     authorId: 1,
-    quote: 'A woman is like a Tea Bag. You never know how strong she is until she gets into hot water.',
+    quote: 'A woman is like a tea bag. You never know how strong she is until she gets into hot water.',
   },
   {
     id: 2,
     authorId: 2,
     quote: 'First we eat, then we do everything else.',
-  },
+  }
 ];
 
+
+
 const typeDefs = gql`
-  type Query {
-    hello: String
-    author: [Author]
-    quotes: [Quote]
-  }
-  type Author {
-    id: Int
-    name: String
-    quotes: [Quote]
-  }
-  type Quote {
-    id: Int
-    authorId: Int
-    quote: String
-    author: Author
-  }
+type Query {
+  authors: [Author]
+  # quotes: [Quote]
+  quote(id: Int!): Quote
+  quotesByAuthor(authorId: Int!): [Quote]
+}
+type Author {
+  id: Int
+  name: String
+  quotes: [Quote]
+}
+type Quote {
+  id: Int
+  authorId: Int
+  quote: String
+  author: Author
+}
 `;
+
+
 
 const resolvers = {
   Query: {
-    hello: () => "Hi! Love from @stemmlerjs 🤠.",
-    author: (_, { id }) => find(authors, { id }),
-    quotes: () => quotes
+    quote(parent, args, context, info) {
+      return quotes.find(quote => quote.id === args.id);
+    },
+    quotesByAuthor(parent, args, context, info) {
+      const author = authors.find(author => author.id === args.authorId);
+      return quotes.filter(quote => quote.authorId === author.id);
+    },
+    authors: () => authors,
+    // author(id) {
+    //   quotes: () => quotes.find(quote => quotes.authorId === id);
+    // },
+    // quotes: () => quotes
   },
 
-  Author: {
-    quotes: author => filter(quotes, {authorId: author.id}),
-  },
+  // Author: {
+  //   quotes: (author, quote) => quote.authorId === author.id,
+  // },
 
-  Quote: {
-    author: quote => find(authors, {id: quote.authorId}),
-  }
+  // Quote: {
+  //   author: quote => find(authors, { id: quote.authorId }),
+  // }
 };
 
 function createLambdaServer() {
