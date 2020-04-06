@@ -58,7 +58,8 @@ type Query {
   authors: [Author]
   quotes: [Quote]
   quote(id: Int!): Quote
-  quotesByAuthor(authorId: Int!): [Quote]
+  quotesByAuthorId(authorId: Int!): [Quote]
+  quotesByAuthorName(authorName: String!): [Quote]
 }
 type Author {
   id: Int
@@ -80,9 +81,13 @@ const resolvers = {
     quote(parent, args, context, info) {
       return quotes.find(quote => quote.id === args.id);
     },
-    quotesByAuthor(parent, args, context, info) {
+    quotesByAuthorId(parent, args, context, info) {
       const author = authors.find(author => author.id === args.authorId);
       return quotes.filter(quote => quote.authorId === author.id);
+    },
+    quotesByAuthorName(parent, args, context, info) {
+      const author = authors.find(author => author.name.includes(args.authorName));
+      return quotes.filter(quote => quote.id === author.id);
     },
     authors: () => authors,
     quotes: () => quotes
