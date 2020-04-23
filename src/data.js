@@ -1,27 +1,33 @@
 exports.authors = [
     {
         id: 1,
-        name: 'Eleanor Roosevelt'
+        name: 'Eleanor Roosevelt',
+        description: 'American first lady (1933–45), a United Nations diplomat and humanitarian'
     },
     {
         id: 2,
-        name: 'M.F.K. Fisher'
+        name: 'M.F.K. Fisher',
+        description: 'Writer'
     },
     {
         id: 3,
-        name: 'Norman Cousins'
+        name: 'Norman Cousins',
+        description: 'American political journalist, author, professor, and world peace advocate'
     },
     {
         id: 4,
-        name: 'Wicked by Gregory Maguire'
+        name: 'Wicked by Gregory Maguire',
+        description: ''
     },
     {
         id: 5,
-        name: 'Maya Angelou'
+        name: 'Maya Angelou',
+        description: 'American poet, memoirist, actress'
     },
     {
         id: 6,
-        name: 'Edith Sitwell'
+        name: 'Edith Sitwell',
+        description: 'British poet and critic'
     }
 ];
 
