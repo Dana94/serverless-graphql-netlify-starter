@@ -16,7 +16,7 @@ type Author {
   id: Int!
   name: String!
   quotes: [Quote]!,
-  descriptions: String
+  description: String
 }
 type Quote {
   id: Int!
