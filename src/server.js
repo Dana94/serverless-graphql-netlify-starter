@@ -13,15 +13,16 @@ type Query {
   quotesByAuthorName(authorName: String!): [Quote]
 }
 type Author {
-  id: Int
-  name: String
-  quotes: [Quote]
+  id: Int!
+  name: String!
+  quotes: [Quote]!,
+  descriptions: String
 }
 type Quote {
-  id: Int
-  authorId: Int
-  quote: String
-  author: Author
+  id: Int!
+  authorId: Int!
+  quote: String!
+  author: Author!
 }
 `;
 
