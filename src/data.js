@@ -28,6 +28,11 @@ exports.authors = [
         id: 6,
         name: 'Edith Sitwell',
         description: 'British poet and critic'
+    },
+    {
+        id: 7,
+        name: 'Mahatma Gandhi',
+        description: 'Indian lawyer, anti-colonial nationalist, and political ethicist'
     }
 ];
 
@@ -66,5 +71,10 @@ exports.quotes = [
         id: 7,
         authorId: 6,
         quote: 'I am patient with stupidity, but not with those who are proud of it.'
+    },
+    {
+        id: 8,
+        authorId: 7,
+        quote: 'Earth provides enough to satisfy every man’s needs, but not every man’s greed.'
     }
 ];
