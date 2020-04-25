@@ -120,7 +120,7 @@ exports.quotes = [
     {
         id: 11,
         authorId: 10,
-        quote: '"Well, now that we have seen each other," said the unicorn, "if you\ll believe in me, I\'ll believe in you."'
+        quote: '"Well, now that we have seen each other," said the unicorn, "if you\'ll believe in me, I\'ll believe in you."'
     },
     {
         id: 12,
