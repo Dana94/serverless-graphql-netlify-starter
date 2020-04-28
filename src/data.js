@@ -63,6 +63,41 @@ exports.authors = [
         id: 13,
         name: 'Jack Canfield',
         description: 'American motivational speaker and author'
+    },
+    {
+        id: 14,
+        name: 'Annie Dillard, The Writing Life',
+        description: 'American author'
+    },
+    {
+        id: 15,
+        name: 'Bill Watterson',
+        description: 'comic strip artist (b. 5 Jul 1958) [Calvin & Hobbes]'
+    },
+    {
+        id: 16,
+        name: 'Anne Lamott',
+        description: 'author'
+    },
+    {
+        id: 17,
+        name: 'H.G. Wells',
+        description: 'author'
+    },
+    {
+        id: 18,
+        name: 'Ann Patchett, State of Wonder',
+        description: 'writer (b. 2 Dec 1963)'
+    },
+    {
+        id: 19,
+        name: 'J.R.R. Tolkien, The Hobbit, or There and Back Again',
+        description: 'English writer, poet, WWI veteran (a First Lieutenant in the Lancashire Fusiliers, British Army)'
+    },
+    {
+        id: 20,
+        name: 'J.K. Rowling, Harry Potter and the Goblet of Fire',
+        description: 'author'
     }
 ];
 
@@ -141,5 +176,40 @@ exports.quotes = [
         id: 15,
         authorId: 4,
         quote: '"People who claim that they\'re evil are usually no worse than the rest of us." He sighed. "It\'s people who claim that they\'re good, or anyway better than the rest of us, that you have to be wary of."'
+    },
+    {
+        id: 16,
+        authorId: 14,
+        quote: 'How we spend our days is, of course, how we spend our lives.'
+    },
+    {
+        id: 17,
+        authorId: 15,
+        quote: 'It\'s hard to be religious when certain people are never incinerated by bolts of lightning. '
+    },
+    {
+        id: 18,
+        authorId: 16,
+        quote: 'Lighthouses don\'t go running all over an island looking for boats to save\; they just stand there shining.'
+    },
+    {
+        id: 19,
+        authorId: 17,
+        quote: 'We all have our time machines, don\'t we. Those that take us back are memories...And those that carry us forward, are dreams.'
+    },
+    {
+        id: 20,
+        authorId: 18,
+        quote: 'The question is whether or not you choose to disturb the world around you, or if you choose to let it go on as if you had never arrived.'
+    },
+    {
+        id: 21,
+        authorId: 19,
+        quote: 'It does not do to leave a live dragon out of your calculations, if you live near him.'
+    },
+    {
+        id: 22,
+        authorId: 20,
+        quote: 'If you want to know what a man\'s like, take a good look at how he treats his inferiors, not his equals.'
     }
 ];
