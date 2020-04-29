@@ -108,6 +108,21 @@ exports.authors = [
         id: 22,
         name: 'George H. Lorimer',
         description: 'American journalist and author (6 Oct 1867-22 Oct 1937)'
+    },
+    {
+        id: 23,
+        name: 'Bossypants by Tina Fey',
+        description: 'American actress, comedian, writer and producer'
+    },
+    {
+        id: 24,
+        name: 'Salvador Dali',
+        description: 'Spanish surrealist painter (11 May 1904-23 Jan 1989)'
+    },
+    {
+        id: 25,
+        name: 'Isabel Allende',
+        description: 'writer'
     }
 ];
 
@@ -231,5 +246,36 @@ exports.quotes = [
         id: 24,
         authorId: 22,
         quote: 'It\'s good to have money and the things that money can buy, but it\'s good, too, to check up once in a while and make sure that you haven\'t lost the things that money can\'t buy.'
+    },
+    {
+        id: 25,
+        authorId: 23,
+        quote: 'Some people say, "Never let them see you cry." I say, if you’re so mad you could just cry, then cry. It terrifies everyone.'
+    },
+    {
+        id: 26,
+        authorId: 23,
+        quote: 'If you retain nothing else, always remember the most important rule of beauty, which is: who cares?'
+    },
+    {
+        id: 27,
+        authorId: 23,
+        quote: 'Do your thing and don\'t care if they like it.'
+    },
+    {
+        id: 28,
+        authorId: 24,
+        quotes: 'The sole difference between myself and a madman is the fact that I am not mad.'
+    },
+    {
+        id: 29,
+        authorId: 5,
+        quote: 'I can be changed by what happens to me. But I refuse to be reduced by it.'
+    },
+    {
+        id: 30,
+        authorId: 25,
+        quote: 'We don\'t even know how strong we are until we are forced to bring that hidden strength forward. In times of tragedy, of war, of necessity, people do amazing things. The human capacity for survival and renewal is awesome.'
     }
+
 ];
