@@ -98,6 +98,16 @@ exports.authors = [
         id: 20,
         name: 'J.K. Rowling, Harry Potter and the Goblet of Fire',
         description: 'author'
+    },
+    {
+        id: 21,
+        name: 'Jessica Mitford',
+        description: 'author, journalist, and civil rights activist (11 Sep 1917-1996)'
+    },
+    {
+        id: 22,
+        name: 'George H. Lorimer',
+        description: 'American journalist and author (6 Oct 1867-22 Oct 1937)'
     }
 ];
 
@@ -211,5 +221,15 @@ exports.quotes = [
         id: 22,
         authorId: 20,
         quote: 'If you want to know what a man\'s like, take a good look at how he treats his inferiors, not his equals.'
+    },
+    {
+        id: 23,
+        authorId: 21,
+        quote: 'You may not be able to change the world, but at least you can embarrass the guilty.'
+    },
+    {
+        id: 24,
+        authorId: 22,
+        quote: 'It\'s good to have money and the things that money can buy, but it\'s good, too, to check up once in a while and make sure that you haven\'t lost the things that money can\'t buy.'
     }
 ];
