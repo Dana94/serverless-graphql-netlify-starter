@@ -265,7 +265,7 @@ exports.quotes = [
     {
         id: 28,
         authorId: 24,
-        quotes: 'The sole difference between myself and a madman is the fact that I am not mad.'
+        quote: 'The sole difference between myself and a madman is the fact that I am not mad.'
     },
     {
         id: 29,
