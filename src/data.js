@@ -57,7 +57,7 @@ exports.authors = [
     {
         id: 12,
         name: '"Anthem" by Leonard Cohen',
-        description: 'musician and writer (21 Sep 1934-7 Nov 2016)'
+        description: 'musician and writer'
     },
     {
         id: 13,
@@ -72,7 +72,7 @@ exports.authors = [
     {
         id: 15,
         name: 'Bill Watterson',
-        description: 'comic strip artist (b. 5 Jul 1958) [Calvin & Hobbes]'
+        description: 'comic strip artist [Calvin & Hobbes]'
     },
     {
         id: 16,
@@ -87,7 +87,7 @@ exports.authors = [
     {
         id: 18,
         name: 'Ann Patchett, State of Wonder',
-        description: 'writer (b. 2 Dec 1963)'
+        description: 'writer'
     },
     {
         id: 19,
@@ -102,12 +102,12 @@ exports.authors = [
     {
         id: 21,
         name: 'Jessica Mitford',
-        description: 'author, journalist, and civil rights activist (11 Sep 1917-1996)'
+        description: 'author, journalist, and civil rights activist'
     },
     {
         id: 22,
         name: 'George H. Lorimer',
-        description: 'American journalist and author (6 Oct 1867-22 Oct 1937)'
+        description: 'American journalist and author'
     },
     {
         id: 23,
@@ -117,12 +117,27 @@ exports.authors = [
     {
         id: 24,
         name: 'Salvador Dali',
-        description: 'Spanish surrealist painter (11 May 1904-23 Jan 1989)'
+        description: 'Spanish surrealist painter'
     },
     {
         id: 25,
         name: 'Isabel Allende',
         description: 'writer'
+    },
+    {
+        id: 26,
+        name: 'Robert Frost',
+        description: '20th-century poet'
+    },
+    {
+        id: 27,
+        name: 'Rita Mae Brown',
+        description: 'writer'
+    },
+    {
+        id: 28,
+        name: 'Jedidah Isler',
+        description: 'TED Fellows Retreat 2015 - The untapped genius that could change science for the better'
     }
 ];
 
@@ -170,7 +185,7 @@ exports.quotes = [
     {
         id: 9,
         authorId: 8,
-        quote: 'I am not an angel," I asserted\; "and I will not be one till I die: I will be myself. Mr. Rochester, you must neither expect nor exact anything celestial of me - for you will not get it, any more than I shall get it of you: which I do not at all anticipate.'
+        quote: 'I am not an angel, and I will not be one till I die: I will be myself. Mr. Rochester, you must neither expect nor exact anything celestial of me - for you will not get it, any more than I shall get it of you: which I do not at all anticipate.'
     },
     {
         id: 10,
@@ -276,6 +291,31 @@ exports.quotes = [
         id: 30,
         authorId: 25,
         quote: 'We don\'t even know how strong we are until we are forced to bring that hidden strength forward. In times of tragedy, of war, of necessity, people do amazing things. The human capacity for survival and renewal is awesome.'
-    }
+    },
+    {
+        id: 31,
+        authorId: 26,
+        quote: 'In three words I can sum up everything I\'ve learned about life: it goes on.'
+    },
+    {
+        id: 32,
+        authorId: 27,
+        quote: 'I think the reward for conformity is that everyone likes you except yourself.'
+    },
+    {
+        id: 33,
+        authorId: 28,
+        quote: 'Do not think for one minute that because you are who you are, you cannot be who you imagine yourself to be.'
+    },
+    {
+        id: 34,
+        authorId: 4,
+        quote: '"It isn\'t hard to find evil in this world, evil is always more easily imagined than good, somehow."'
+    },
+    {
+        id: 35,
+        authorId: 4,
+        quote: '"Do you even believe in other worlds?" "I find it a great effort to believe in this one, yet it seems to be here, so why should I trust my skepticism about other worlds?"'
+    },
 
 ];
