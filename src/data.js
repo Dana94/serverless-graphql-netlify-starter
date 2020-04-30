@@ -185,7 +185,7 @@ exports.quotes = [
     {
         id: 9,
         authorId: 8,
-        quote: 'I am not an angel," I asserted\; "and I will not be one till I die: I will be myself. Mr. Rochester, you must neither expect nor exact anything celestial of me - for you will not get it, any more than I shall get it of you: which I do not at all anticipate.'
+        quote: 'I am not an angel, and I will not be one till I die: I will be myself. Mr. Rochester, you must neither expect nor exact anything celestial of me - for you will not get it, any more than I shall get it of you: which I do not at all anticipate.'
     },
     {
         id: 10,
