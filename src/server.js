@@ -2,8 +2,7 @@ const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
 
-const {authors} = require('./data/authors.js');
-const {quotes} = require('./data/quotes.js');
+const {authors, quotes} = require('./data.js');
 
 const typeDefs = gql`
 type Query {
