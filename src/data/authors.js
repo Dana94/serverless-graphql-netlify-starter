@@ -82,7 +82,7 @@ exports.authors = [
     {
         id: 17,
         name: 'H.G. Wells',
-        description: 'author'
+        description: 'writer'
     },
     {
         id: 18,
@@ -138,6 +138,26 @@ exports.authors = [
         id: 28,
         name: 'Jedidah Isler',
         description: 'TED Fellows Retreat 2015 - The untapped genius that could change science for the better'
+    },
+    {
+        id: 29,
+        name: 'Neil deGrasse Tyson',
+        description: 'astrophysicist and author'
+    },
+    {
+        id: 30,
+        name: 'Edmund Wilson',
+        description: 'American writer and literary and social critic'
+    },
+    {
+        id: 31,
+        name: 'Elizabeth Edwards',
+        description: 'American attorney, author, and health care activist'
+    },
+    {
+        id: 32,
+        name: 'E.B. White',
+        description: 'author'
     }
 ];
 

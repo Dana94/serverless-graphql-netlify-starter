@@ -174,5 +174,30 @@ exports.quotes = [
         authorId: 4,
         quote: '"Do you even believe in other worlds?" "I find it a great effort to believe in this one, yet it seems to be here, so why should I trust my skepticism about other worlds?"'
     },
+    {
+        id: 36,
+        authorId: 17,
+        quote: 'Every time I see an adult on a bicycle, I no longer despair for the future of the human race.'
+    },
+    {
+        id: 37,
+        authorId: 29,
+        quote: 'Curious that we spend more time congratulating people who have succeeded than encouraging people who have not.'
+    },
+    {
+        id: 38,
+        authorId: 30,
+        quote: 'No two persons ever read the same book.'
+    },
+    {
+        id: 39,
+        authorId: 31,
+        quote: 'She stood in the storm, and when the wind did not blow her way, she adjusted her sails.'
+    },
+    {
+        id: 40,
+        authorId: 32,
+        quote: 'Hang on to your hat. Hang on to your hope. And wind the clock, for tomorrow is another day.'
+    }
 
 ];
