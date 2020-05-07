@@ -158,6 +158,31 @@ exports.authors = [
         id: 32,
         name: 'E.B. White',
         description: 'author'
+    },
+    {
+        id: 33,
+        name: 'Unknown',
+        description: ''
+    },
+    {
+        id: 34,
+        name: 'Bernard M. Baruch',
+        description: ''
+    },
+    {
+        id: 35,
+        name: 'Thomas Babington Macaulay',
+        description: 'British poet, historian and Whig politician'
+    },
+    {
+        id: 36,
+        name: 'Sophia Loren',
+        description: 'Academy Award winning Italian film actress'
+    },
+    {
+        id: 37,
+        name: 'RuPaul',
+        description: 'actor, drag queen, television personality, and singer/songwriter'
     }
 ];
 
@@ -362,6 +387,51 @@ exports.quotes = [
         id: 40,
         authorId: 32,
         quote: 'Hang on to your hat. Hang on to your hope. And wind the clock, for tomorrow is another day.'
+    },
+    {
+        id: 41,
+        authorId: 33,
+        quote: 'When you don’t know what to do or how to move forward, stand still.'
+    },
+    {
+        id: 42,
+        authorId: 33,
+        quote: 'Never decide whether or not to quit a marathon while you’re running uphill or downhill. You decide if you want to keep going when you’re running flat.'
+    },
+    {
+        id: 43,
+        authorId: 34,
+        quote: 'Be who you are and say what you feel, because those who mind don\'t matter, and those who matter don\'t mind.'
+    },
+    {
+        id: 44,
+        authorId: 33,
+        quote: 'Never be too busy to meet someone new.'
+    },
+    {
+        id: 45,
+        authorId: 35,
+        quote: 'The measure of a man\'s real character is what he would do if he knew he would never be found out.'
+    },
+    {
+        id: 46,
+        authorId: 36,
+        quote: 'There is a fountain of youth: it is your mind, your talents, the creativity you bring to your life and the lives of people you love. When you learn to tap this source, you will truly have defeated age.'
+    },
+    {
+        id: 47,
+        authorId: 37,
+        quote: 'When you become the image of your own imagination, it\'s the most powerful thing you could ever do.'
+    },
+    {
+        id: 48,
+        authorId: 37,
+        quote: 'True wealth is having a healthy mind, body, and spirit. True wealth is having the knowledge to maneuver and navigate the mental obstacles that inhibit your ability to soar.'
+    },
+    {
+        id: 49,
+        authorId: 37,
+        quote: 'If you don\'t love yourself, how in the hell you gonna love somebody else?'
     }
 
 ];
