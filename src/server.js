@@ -11,6 +11,7 @@ type Query {
   quote(id: Int!): Quote
   quotesByAuthorId(authorId: Int!): [Quote]
   quotesByAuthorName(authorName: String!): [Quote]
+  quotesByTagNames(tags: [String]!): [Quote]
 }
 type Author {
   id: Int!
@@ -23,6 +24,7 @@ type Quote {
   authorId: Int!
   quote: String!
   author: Author!
+  tags: [String]
 }
 `;
 
@@ -38,6 +40,11 @@ const resolvers = {
     quotesByAuthorName(parent, args, context, info) {
       const author = authors.find(author => author.name.includes(args.authorName));
       return quotes.filter(quote => quote.authorId === author.id);
+    },
+    quotesByTagNames(parent, args, context, info) {
+      return quotes.filter(quote => {
+        return quote.tags.some(tag => args.tags.includes(tag));
+      });
     },
     authors: () => authors,
     quotes: () => quotes
