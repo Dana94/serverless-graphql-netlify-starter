@@ -520,3 +520,9 @@ exports.quotes = [
 
 ];
 
+exports.tags = [
+    'book',
+    'music',
+    'comic'
+];
+
