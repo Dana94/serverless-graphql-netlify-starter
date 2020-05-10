@@ -8,7 +8,8 @@ const typeDefs = gql`
 type Query {
   authors: [Author]
   quotes: [Quote]
-  quote(id: Int!): Quote
+  randomQuote: Quote
+  quoteById(id: Int!): Quote
   quotesByAuthorId(authorId: Int!): [Quote]
   quotesByAuthorName(authorName: String!): [Quote]
   quotesByTagNames(tags: [String]!): [Quote]
@@ -30,7 +31,13 @@ type Quote {
 
 const resolvers = {
   Query: {
-    quote(parent, args, context, info) {
+    authors: () => authors,
+    quotes: () => quotes,
+    randomQuote: () => {
+      const index = Math.floor(Math.random() * Math.floor(quotes.length));
+      return quotes[index];
+    },
+    quoteById(parent, args, context, info) {
       return quotes.find(quote => quote.id === args.id);
     },
     quotesByAuthorId(parent, args, context, info) {
@@ -45,9 +52,7 @@ const resolvers = {
       return quotes.filter(quote => {
         return quote.tags.some(tag => args.tags.includes(tag));
       });
-    },
-    authors: () => authors,
-    quotes: () => quotes
+    }
   },
 
   Author: {
