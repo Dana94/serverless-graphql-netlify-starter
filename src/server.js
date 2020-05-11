@@ -2,12 +2,13 @@ const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
 
-const {authors, quotes} = require('./data.js');
+const {authors, quotes, tags} = require('./data.js');
 
 const typeDefs = gql`
 type Query {
   authors: [Author]
   quotes: [Quote]
+  tags: [String]
   randomQuote: Quote
   quoteById(id: Int!): Quote
   quotesByAuthorId(authorId: Int!): [Quote]
@@ -33,6 +34,7 @@ const resolvers = {
   Query: {
     authors: () => authors,
     quotes: () => quotes,
+    tags: () => tags,
     randomQuote: () => {
       const index = Math.floor(Math.random() * Math.floor(quotes.length));
       return quotes[index];
