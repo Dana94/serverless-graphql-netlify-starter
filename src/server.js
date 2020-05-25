@@ -47,7 +47,7 @@ const resolvers = {
       return quotes.filter(quote => quote.authorId === author.id);
     },
     quotesByAuthorName(parent, args, context, info) {
-      const author = authors.find(author => author.name.includes(args.authorName));
+      const author = authors.find(author => author.name.toLowerCase().includes(args.authorName.toLowerCase()));
       return quotes.filter(quote => quote.authorId === author.id);
     },
     quotesByTagNames(parent, args, context, info) {
