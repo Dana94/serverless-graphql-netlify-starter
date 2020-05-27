@@ -217,7 +217,22 @@ exports.authors = [
         id: 37,
         name: 'RuPaul',
         description: 'actor, drag queen, television personality, and singer/songwriter',
+    },
+    {
+        id: 38,
+        name: 'Earl Nightingale',
+        description: 'American motivational speaker and author',
+    },
+    {
+        id: 39,
+        name: 'Najwa Zebian',
+        description: 'Lebanese-Canadian author, speaker, and educator',
 
+    },
+    {
+        id: 40,
+        name: 'Oh, the Places You\'ll Go! by Dr. Seuss',
+        description: ''
     }
 ];
 
@@ -516,6 +531,24 @@ exports.quotes = [
         authorId: 37,
         quote: 'If you don\'t love yourself, how in the hell you gonna love somebody else?',
         tags: []
+    },
+    {
+        id: 50,
+        authorId: 38,
+        quote: 'Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.',
+        tags: []
+    },
+    {
+        id: 51,
+        authorId: 39,
+        quote: 'Those mountains you are carrying, you were only supposed to climb.',
+        tags: []
+    },
+    {
+        id: 52,
+        authorId: 40,
+        quote: 'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You\'re on your own. And you know what you know. And YOU are the one who\'ll decide where to go...',
+        tags: ['book']
     }
 
 ];
