@@ -11,7 +11,7 @@ type Query {
   tags: [String]
   randomQuote: Quote
   quoteById(id: Int!): Quote
-  quotesByAuthorId(authorId: Int!, tags: [String]): [Quote]
+  quotesByAuthorId(authorId: Int!, tags: [String]!): [Quote]
   quotesByAuthorName(authorName: String!): [Quote]
   quotesByTagNames(tags: [String]!): [Quote]
 }
@@ -45,7 +45,7 @@ const resolvers = {
     quotesByAuthorId(parent, args, context, info) {
       const author = authors.find(author => author.id === args.authorId);
       return quotes.filter(quote => {
-        if(!args.tags) {
+        if(args.tags.length === 0) {
           return quote.authorId === author.id;
         }
         else {
