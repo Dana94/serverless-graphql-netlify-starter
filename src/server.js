@@ -2,7 +2,7 @@ const ApolloServer = require('apollo-server').ApolloServer
 const ApolloServerLambda = require('apollo-server-lambda').ApolloServer
 const { gql } = require('apollo-server-lambda');
 
-const {authors, quotes, tags} = require('./data.js');
+const { authors, quotes, tags } = require('./data.js');
 
 const typeDefs = gql`
 type Query {
@@ -11,7 +11,7 @@ type Query {
   tags: [String]
   randomQuote: Quote
   quoteById(id: Int!): Quote
-  quotesByAuthorId(authorId: Int!): [Quote]
+  quotesByAuthorId(authorId: Int!, tags: [String]): [Quote]
   quotesByAuthorName(authorName: String!): [Quote]
   quotesByTagNames(tags: [String]!): [Quote]
 }
@@ -44,7 +44,16 @@ const resolvers = {
     },
     quotesByAuthorId(parent, args, context, info) {
       const author = authors.find(author => author.id === args.authorId);
-      return quotes.filter(quote => quote.authorId === author.id);
+      return quotes.filter(quote => {
+        if(!args.tags) {
+          return quote.authorId === author.id;
+        }
+        else {
+          for (let i = 0; i < quote.tags.length; i++) {
+            return quote.authorId === author.id && args.tags.includes(quote.tags[i]);
+          }
+        }
+      });
     },
     quotesByAuthorName(parent, args, context, info) {
       const author = authors.find(author => author.name.toLowerCase().includes(args.authorName.toLowerCase()));
