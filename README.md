@@ -1,4 +1,4 @@
-# Quotes Database API
+# Quotes Database API [![Netlify Status](https://api.netlify.com/api/v1/badges/556e7c17-4b59-4f28-8f71-426e113e4a91/deploy-status)](https://app.netlify.com/sites/hopeful-goldberg-bf6881/deploys)
 ⚡The simplest serverless GraphQL API deployed on Netlify possible
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stemmlerjs/serverless-graphql-netlify-starter)
