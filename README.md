@@ -1,7 +1,6 @@
 # Quotes Database API [![Netlify Status](https://api.netlify.com/api/v1/badges/556e7c17-4b59-4f28-8f71-426e113e4a91/deploy-status)](https://app.netlify.com/sites/hopeful-goldberg-bf6881/deploys)
-⚡The simplest serverless GraphQL API deployed on Netlify possible
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stemmlerjs/serverless-graphql-netlify-starter)
+> Quotes seen in the [quotes database](https://github.com/Dana94/quotes-database).
 
 ## Installation
 
@@ -22,4 +21,6 @@ npm run start
 
 This project uses both `apollo-server` and `apollo-server-lambda` so that you can write your GraphQL resolvers and type definitions in one place, yet run GraphQL servers locally and serverlessly.
 
-Check out [server.js](https://github.com/stemmlerjs/serverless-graphql-netlify-starter/blob/master/src/server.js) for how it works.
+## Notes
+
+Used [serverless-graphql-netlify-starter](https://github.com/stemmlerjs/serverless-graphql-netlify-starter) as a starter.
