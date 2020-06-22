@@ -233,6 +233,26 @@ exports.authors = [
         id: 40,
         name: 'Oh, the Places You\'ll Go! by Dr. Seuss',
         description: ''
+    },
+    {
+        id: 41,
+        name: 'Donna Reed',
+        description: 'actress'
+    },
+    {
+        id: 42,
+        name: 'John Cage',
+        description: 'American composer, philosopher, poet, music theorist, artist, printmaker, and amateur mycologist and mushroom collector'
+    },
+    {
+        id: 43,
+        name: 'Arthur Miller',
+        description: 'American playwright and essayist'
+    },
+    {
+        id: 44,
+        name: 'Marilyn Monroe',
+        description: 'American actress, model, and singer'
     }
 ];
 
@@ -549,6 +569,36 @@ exports.quotes = [
         authorId: 40,
         quote: 'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You\'re on your own. And you know what you know. And YOU are the one who\'ll decide where to go...',
         tags: ['book']
+    },
+    {
+        id: 53,
+        authorId: 41,
+        quote: "The term 'working mother' is ridiculously redundant.",
+        tags: []
+    },
+    {
+        id: 54,
+        authorId: 42,
+        quote: 'I can\'t understand why people are frightened of new ideas. I\'m frightened of the old ones.',
+        tags: []
+    },
+    {
+        id: 55,
+        authorId: 43,
+        quote: 'Don\'t be seduced into thinking that that which does not make a profit is without value. ',
+        tags: []
+    },
+    {
+        id: 56,
+        authorId: 33,
+        quote: 'Beautiful people are not always good, but good people are always beautiful.',
+        tags: []
+    },
+    {
+        id: 57,
+        authorId: 44,
+        quote: 'It\'s far better to be unhappy alone than unhappy with someone — so far.',
+        tags: []
     }
 
 ];
