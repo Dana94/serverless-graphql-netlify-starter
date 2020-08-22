@@ -333,7 +333,7 @@ exports.quotes = [
     {
         id: 13,
         authorId: 12,
-        quote: 'There is a crack a crack in everything that\'s how the light gets in.',
+        quote: 'There is a crack in everything that\'s how the light gets in.',
         tags: ['music']
     },
     {
