@@ -253,6 +253,11 @@ exports.authors = [
         id: 44,
         name: 'Marilyn Monroe',
         description: 'American actress, model, and singer'
+    },
+    {
+        id: 45,
+        name: 'Ruth Bader Ginsburg',
+        description: 'Associate justice of the Supreme Court of the United States'
     }
 ];
 
@@ -598,6 +603,12 @@ exports.quotes = [
         id: 57,
         authorId: 44,
         quote: 'It\'s far better to be unhappy alone than unhappy with someone — so far.',
+        tags: []
+    },
+    {
+        id: 58,
+        authorId: 45,
+        quote: 'I ask no favor for my sex; all I ask of our brethren is that they take their feet off our necks.',
         tags: []
     }
 
